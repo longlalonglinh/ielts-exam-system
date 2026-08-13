@@ -58,11 +58,11 @@ export const LoginInstructions: React.FC<LoginInstructionsProps> = ({ onLogin })
       return;
     }
 
-    // Direct Admin Redirection Check
-    if (cleanSbd.toUpperCase() === 'ADMIN123' && cleanCode.toUpperCase() === 'ADMIN123') {
-      window.location.href = 'admin.html';
-      return;
-    }
+   // Direct Admin Redirection Check
+if (cleanSbd.toUpperCase() === 'ADMIN123' && cleanCode.toUpperCase() === 'ADMIN123') {
+  window.location.href = './?view=admin';
+  return;
+}
 
     setErrorMsg('');
     onLogin(cleanSbd, cleanCode, reviewPrevious);

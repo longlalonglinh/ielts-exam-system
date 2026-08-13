@@ -653,7 +653,7 @@ function doPost(e) {
                   sbd={sbd}
                   examCode={examCode}
                   testMode={testMode}
-                  onViolationCountChange={(count) => setViolationCount(count)}
+                  onViolationCountChange={(count: number) => setViolationCount(count)}
                 />
 
                 {/* Skill Lock / Notice Banner */}
